@@ -29,6 +29,7 @@
         reloadIfChanged: TRUE
         inspector:
           group: 'formElement'
+          position: 1
       validation:
         'Neos.Neos/Validation/NotEmptyValidator': []
     'secretKey':
@@ -37,7 +38,7 @@
         label: i18n
         inspector:
           group: 'formElement'
-          position: 'after siteKey'
+          position: 2
       validation:
         'Neos.Neos/Validation/NotEmptyValidator': []
     'expectedHostname':
@@ -46,7 +47,7 @@
         label: i18n
         inspector:
           group: 'formElement'
-          position: 'after secretKey'
+          position: 3
     'action':
       type: string
       defaultValue: 'homepage'
@@ -55,7 +56,7 @@
         reloadIfChanged: TRUE
         inspector:
           group: 'formElement'
-          position: 'after expectedHostname'
+          position: 4
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
@@ -75,7 +76,7 @@
         reloadIfChanged: TRUE
         inspector:
           group: 'formElement'
-          position: 'after action'
+          position: 5
       validation:
         'Neos.Neos/Validation/NotEmptyValidator': []
     'timeout':
@@ -85,7 +86,7 @@
         reloadIfChanged: TRUE
         inspector:
           group: 'formElement'
-          position: 'after threshold'
+          position: 6
 
 # This is the recaptcha V2 implementation.
 'Wegmeister.Recaptcha:CaptchaV2':
@@ -101,7 +102,7 @@
         label: i18n
         inspector:
           group: 'formElement'
-          position: 'after siteKey'
+          position: 2
       validation:
         'Neos.Neos/Validation/NotEmptyValidator': []
     'expectedHostname':
@@ -110,7 +111,7 @@
         label: i18n
         inspector:
           group: 'formElement'
-          position: 'after secretKey'
+          position: 3
 
 # This is the old recaptcha implementation.
 # It should be updated to the new version as soon as possible.
